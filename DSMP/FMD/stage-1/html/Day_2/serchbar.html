@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search bar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        .container{
+            width: 100%;
+            height: 80px;
+            background-color: rgba(199, 236, 238,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .search_bar{
+            width: 500px;
+            height: 50px;
+            margin-right: 200px;
+            border-radius: 30px;
+            background-color: rgba(199, 236, 238,1.0);
+            display: flex;
+            -webkit-box-shadow: 10px 10px 25px -10px rgba(0,149,175,1);
+            -moz-box-shadow: 10px 10px 25px -10px rgba(0,149,175,1);
+            box-shadow: 10px 10px 25px -10px rgba(0,149,175,1);
+        }
+        .search-text{
+            height: 100%;
+            flex: 1;
+            display: inherit;
+            align-items: center;
+        }
+        .search-text>input{
+            color: rgba(83, 92, 104,1.0);
+            font-size: 25px;
+            padding-left: 10px;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background: none;
+            border: none;
+            height: 80%;
+        }
+        .search-text>input:focus{
+            outline: none;
+        }
+        .icon{
+            height: 100%;
+            width: 50px;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+        }
+        .icon:last-child{
+            padding-left: 0;
+            padding-right: 10px;
+        }
+        .icon>button > img{
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        .search > img{
+            width: 40px;
+            height: 40px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+        .icon>button{
+            background: none;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="search_bar">
+            <div class="icon search">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADWUlEQVR4nO2YW4hNYRTHv3HJrSj3yAslj+TyIpeQ0Axz1jcbs9faM657rW06JA+Uy0gkpRRFiJS8oJB3yQMppJTigQeSyH0o49o3xHf2OXOcY759ZmT/aj+dfdba/2+t9X3rW0qlpKSkpKSkpKSkpPwP6EAmaOTtQHwRiG9okiea5JEmvqaRz4EvG2obwjGqKzJjRnOPOpRVgPJAk3wr5QHkW0BhjeoqaJRpGvluqQLyBBFfqQ1Wje1cET6vBpKP+R/InwD5MhAfA+Idmng3EJ/4mWpf895HfqUxmts5IlC25qeLPNZBKLVB06D2/rdoSTQKSLYAyes88X64pMIieHFsZb9qlD2et75PqTbq68PBgHw6lmYfdBBOUpUA6sNxGuW9FYXWOmL8S3NVZoeLRfYRYra/ShpNfCF3FSXqsE3kgzExO1WSgM9TY3l9yoXdMAx7apKbv4tf3i9c2jRCJQUQn7Qi8RH8aLQr2xp5Zu4iRRtVUocekLywDrTjrn0AyXWr9q66tt8G+OH03NpwfyoDyiZrob5kSIYmcW6ssIUQUT/XPjIYTbZ9ZEhmufahAHmztd+/dO5AKeU1rhluC6kjbnDuRBPvs1qKe0nVYU7BB6E4dwLI26wd67lzBya1SIbm1GESLYv2ebXdkszLZnu59uH5a8YnXyNBNCe3Yw1nu/ahSdbai1WzdOUw1z5UY2NjbyB+Z52+B1z70MSXrDq849r+LzTyWWvneuMtzw5RjvD8aKLdUQPxLpUUEPCCWHO335HpKjsapqP2GnikShJAvmzncQY502GbJFti95KjKmm8ep4CJJ8tp+9Mw/e39uooWm7aEUvIU89bOVBVAkBeF7vitmqSJpMipdow27cm3lvguny+HDsdBkiOFJiK3NS+zPc8r3vR3S+QQKM8bHe6gny4YmKam5u7mZ2l0FTEnPxmamIGFEC8rO0w/XGlPZOzhRd7KinGYNoIQH5W0scV/GB5295vJuoVFYOY7W/u2YDSUoaIJ5p4vZm8mEtaMTEm+qqSVIdhX7Mdt6UVyX0zq7KKuEWj3G4bNPhSbTrdnDQtKoaPVlxMHM8LB5gC/9N7/4SYMqgClENFxBxLxXTJyCAf/2ciU0LN7OjsbyyHwpFBvlfOJPI7gsw9GYD+JOIAAAAASUVORK5CYII=">
+            </div>
+            <div class="search-text">
+                <input type="text" placeholder="Search ....">
+            </div>
+            <div class="icon">
+                <button>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABQElEQVR4nO2WvUoDQRDHt7ISO30dUR9AdoZtMpPCJjMR0ouFIhbGx/HjCbxCJCA+hNHKD8QyENm9Lc7E44TbXCDcH6a4WZjf7H8W5oxpVSHn3BqSXiLrC7KMgWToc2bRApIhsk6L4XMLB2O46Rz4tQnw9K9owcmFrdW8ao8LWB+Q5f6/YCDNfNQG40zhKnAyB7AFc0NWA+m3L+Tc4XpeWMbzS0Kf/RnRYCPkSL9qg5H0KYC7/e2ytYgsF+Gs09+J2+oxAVjOY/Er/+2Xfg73N//9IwAsN7GZs9pgy7oFrJ/R0qPyBvU4t1k+3MFgszbYC7s9ANZJnN+1Zd318wwzpd4estyGxlgnlsSalLIkFljey141sL5hR/aTQmdsPwXSUeFFj4DkJJm9VWpsKy0NDKRZ2XwLtmfLAbPcJQebVdEP8jiUrW3KJ7kAAAAASUVORK5CYII=">
+                </button>
+            </div>
+            <div class="icon">
+                <button>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC+UlEQVR4nO2Yz2vUUBDH49nSevGmoPij3m09WQ+2nqzs7jyDdGfWIpTMpFD04l9g/fkXaEtb/wkrCK36R2h7FSoe1Io/UG+VeUl2K1vd3bw12ZUMDCxL3st88p2ZN4nnFVZYYYW1a4ByE5DfGZKdThxQ3lxGZq8XrIJyo1OAJseQcoUoTfMRQPnmCgIkH/1rcwfz4thnUJ45q1FXRVa6FhlQcAlInnfjKf8rBxsbr5uqTO4JYVDu5B2k6dznm5TogaDS+W5lNJ1yDyitI6/tAuGv/QsiXxr18fcLn1Rw5pA6EK/mHjg1e1sgCpBcV7oSHm7nTADiJVPlko8yTET71fU3UFgG5GUg3u5ZECD+rl0EcW6wVZv3/WBIu2S8JhsQIF5VAAuB8nTPa1C2/Gp4OtmvQnwBiBeBeFP7fnwubQDJAtTCifp9a8GIrs0ExLRKJZStRLVybeakIXnZeg2/gCk+YaG19hxhPFcQTY1ECagG5zrJfa0lgzIWwYSjgPIjT0XmEyXSFLAdFmn2uH0QyPdyAbFB+MFQvL5lOv3Zed02kunrB9J2M0cQXkoK20HRyDEYt3GgrGSfWlUuxVPBojsIP4pqhSuZg2hdxCCbziAkG/Z8QRnOHMT3Zwe6NafpHtFBOTvQ7yCfdS/EucH+Ti3k17mlFlBYjkBkwV0ReRiPLJA9CPKyBamFE64gFZLzsbqPc1CEt5MDUWcn1zc8PRAN8qfMQWKY2za3aeYokLx3GVEM8YO0cbiD6KBXC0biU3nMDoLtK/HBrwVn7YOY4jN5D407u8d4fbr2m1Mb6VS+GhxrvKzxW5cYvG6ANGDC0fp+GIzr2KFtVc+ZyOWVdqeksBMlXCFMN0HqaUZ8V4vWa2FRYct9g/yzG/f2uglSB9JRHGVFB0CYCk7pBKCuv+1/2mJTdieTJUge7v0PH+ggntNiRdroNP3wydRUZTL3gFJ6BcOLv3US/ZDQh2rc2rMtWmWQ13q5ZkBjQ15rUqKwwgorrDAvB/sFMGLz354SOMMAAAAASUVORK5CYII=">
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+}
+@media only screen and (max-width:2560px) {
+    .box{
+        background-color: red;
+    }
+}
+@media only screen and (max-width:1440px) {
+    .box{
+        background-color: blue;
+    }
+}
+@media only screen and (max-width:1024px) {
+    .box{
+        background-color: yellow;
+    }
+}

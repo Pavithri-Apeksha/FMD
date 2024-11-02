@@ -1,0 +1,182 @@
+.box{
+    width: 400px;
+    height: 100px;
+    background-color: #38ada9;
+}
+.box1{
+    transition: transform 1s;
+}
+.box1:hover{
+    /* transform: translateX(150px); */
+    /* transform: translateX(-150px); */
+    /* transform: translateY(150px); */
+    /* transform: translateY(-150px); */
+    /* transform: translate(100px,500px); */
+    transform: translateX(500px);
+}
+.box2{
+    transition: transform 1s;
+}
+.box2:hover{
+    transform: rotate(45deg);
+}
+.box3:hover{
+    position: relative;
+    top: 30px;
+    transform: scale(1.5);
+}
+.box-a{
+    position: relative;
+    top: 30px;
+    width: 400px;
+    height: 250px;
+    overflow: hidden;
+}
+.box-a img{
+    width: 100%;
+    height: 100%;
+    transition: transform 2s;
+}
+.box-a img:hover{
+    /* transform: scale(1.5);
+    transform: rotate(160deg); */
+    transform: scale(1.5) rotate(40deg);
+}
+.box4{
+    margin: 100px;
+    transition: all 1s;
+}
+.box4:hover{
+    transform: skew(40deg , 40deg);
+    background-color: rebeccapurple;
+}
+.box5{
+    position: absolute;
+    animation-name: move;
+    animation-duration: 5s;
+}
+@keyframes move{
+    from{
+        left: 0;
+    }
+    to{
+        left: 800px;
+    }
+}
+.image img{
+    position: relative;
+    top: 200px;
+    width: 150px;
+    height: 150px;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.space{
+    width: 100;
+    height: 200px;
+}
+.timing-box{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    animation-name: moveingbox;
+    animation-duration: 5s;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+.box-1{
+    animation-timing-function: linear;
+}
+.box-2{
+    animation-timing-function: ease;
+}
+.box-3{
+    animation-timing-function: ease-in;
+}
+.box-4{
+    animation-timing-function: ease-out;
+}
+.box-5{
+    animation-timing-function: ease-in-out;
+}
+@keyframes moveingbox{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(800px);
+    }
+}
+.change-color{
+   width: 100px;
+   height: 100px;
+   background-color: purple; 
+   animation-name: change;
+   animation-duration: 8s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+@keyframes change {
+    0%{
+        background-color: purple;
+    }
+    20%{
+        background-color: red;
+    }
+    40%{
+        background-color: green;
+    }
+    60%{
+        background-color: blue;
+    }
+    80%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: aqua;
+    }
+}
+.change-position{
+    width: 100px;
+    height: 100px;
+    background-color: purple; 
+    animation-name: change-pos;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+ }
+@keyframes change-pos {
+    0%{
+        background-color: purple;
+        transform: translate(0,0);
+    }
+    25%{
+        background-color: red;
+        transform: translate(400px,0);
+
+    }
+    50%{
+        background-color: green;
+        transform: translate(400px,400px);
+
+    }
+    75%{
+        background-color: blue;
+        transform: translate(0,400px);
+
+    }
+    100%{
+        background-color: yellow;
+        transform: translate(0,0);
+    }
+}

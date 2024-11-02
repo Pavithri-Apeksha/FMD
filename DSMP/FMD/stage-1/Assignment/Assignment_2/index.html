@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List with Calendar</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="image-container"></div>
+    <div class="to-do-container">
+        <!-- Left side calendar -->
+        <div class="left-side">
+            <h3 id="currentMonth"></h3>
+            <div id="calendar"></div>
+        </div>
+
+        <!-- To-Do List Section -->
+        <div class="right-side">
+            <!-- Displaying today's date -->
+            <h1>To-Do List</h1>
+            <h3>Today's Date: <span id="todayDate"></span></h3>
+            
+            <!-- To-Do List functionality -->
+            <input type="text" id="taskInput" placeholder="Add a new task">
+            <button onclick="addTask()">Add Task</button>
+            <ul id="taskList"></ul>
+        </div>
+    </div>
+
+    <!-- Modal for Editing Task -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Edit Task</h2>
+            <input type="text" id="editTaskInput" placeholder="Edit task">
+            <button onclick="saveEdit()">Save</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

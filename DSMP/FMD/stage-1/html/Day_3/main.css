@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+/* header outer */
+.header-outer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px dotted rgba(44, 62, 80,1.0);
+    margin-bottom: 20px;
+}
+/* header inner */
+.header-inner{
+    width: 70%;
+    height: 100%;
+    display: flex;
+}
+/*logo*/
+.logo-wrapper{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+} 
+/*nav*/
+.nav-wrapper{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.nav-wrapper>ul{
+    list-style: none;
+    display: flex;
+}
+.nav-wrapper>ul>li{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-right: 30px;
+    font-size: 22px;
+}
+.nav-wrapper>ul>li:last-child{
+    margin-right: 0;
+}
+.nav-wrapper>ul>li:hover{
+    cursor: pointer;
+    color: rgb(72, 219, 251);
+}
+/*Slider outer*/
+.slider-container{
+    width: 100%;
+    height: 900px;
+    display: flex;
+}
+.slider-inner{
+    flex: 1;
+    display: flex;
+}
+.left-slider{
+    display: flex;
+    align-items: center;
+    background-image: url('https://img.freepik.com/premium-photo/woman-pink-shirt-is-walking-with-rainbow-colored-bag_1248597-5844.jpg?w=826');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 10px;
+}
+.left-slide-content-wrapper{
+    padding: 80px;
+    position: relative;
+    z-index: 2;
+}
+.left-slide-content-wrapper> h1{
+    padding: 10px 0;
+    font-size: 45px;
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+.left-slide-content-wrapper> h4{
+    color: white;
+    padding-top: 10px;
+}
+.shadow{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(44, 62, 80,0.6);
+    position: absolute;
+}
+.order-now{
+    background: none;
+    margin-top: 50px;
+    border-top: 1px solid white ;
+    border-left: 1px solid white ;
+    padding: 9px 16px;
+    color: white;
+    cursor: pointer;
+}
+.order-now:hover{
+    background-color: white;
+    color: black;
+}
+.right-slider{
+    display: flex;
+    flex-direction: column;
+}
+.slider-right-wrapper{
+    display: flex;
+    flex: 1;
+}
+.slider-right-slot{
+    flex: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.women{
+    background-image: url('https://img.freepik.com/premium-photo/woman-wearing-glasses-black-shirt-with-her-arms-crossed_1197721-88586.jpg?w=826');
+}
+.men{
+    background-image: url('https://img.freepik.com/premium-photo/businessman-high-quality-image_1252102-29309.jpg?w=826');
+}
+.kid{
+    background-image: url('https://img.freepik.com/premium-photo/little-boy-wearing-black-suit-wearing-glasses_1258715-44604.jpg?w=826');
+}
+.product{
+    background-image: url('https://img.freepik.com/premium-photo/weekend-shopping-getaway-isolated-white-background_1034820-64356.jpg?w=826');
+}
+.data-wrapper{
+   width: 90%;
+   height: 90%;
+   background-color: rgba(44, 62, 80,0.95);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   color: white;
+   position: relative;
+   z-index: 3;
+   display: none; 
+}
+.slider-right-slot:hover .data-wrapper{
+    display: flex!important;
+}
+.slider-right-slot:hover .data-content-wrapper{
+    display: none;
+}
+.data-content-wrapper{
+    padding: 80px;
+    position: relative;
+    z-index: 2;
+}
+.data-content-wrapper> h1{
+    padding: 10px 0;
+    font-size: 45px;
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+.data-content-wrapper> h4{
+    color: white;
+    padding-top: 10px;
+}
+.product-container{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-inner{
+    width: 65vw;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.products{
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+}
+.products_image{
+    flex: 1;
+    background-image: url('https://img.freepik.com/free-photo/portrait-young-person-celebrating-world-photography-day-with-camera-device_23-2151609210.jpg?ga=GA1.1.1046852719.1725983257&semt=ais_hybrid');
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.products_details{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.name-rate-container, .price-container{
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+}
+.hidden-items{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -65px;
+}
+.hidden-items-inner{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.hidden-item{
+    width: 31%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.products_image:hover .hidden-items{
+    bottom: 5px;
+}
+.about-Container{
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.about-inner{
+    width: 70vw;
+    height: auto;
+    min-height: 500px;
+    display: flex;
+}
+.about{
+    flex: 1;
+}
+.about-left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 10px;
+}
+.about-left h1{
+    margin-bottom: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.about-left p{
+    margin-bottom: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.about-left button{
+    width: 7vw;
+    height: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.about-left button:hover{
+    background-color: black;
+    color: white;
+}
+.about-product{
+    height: 280px;
+    display: flex;
+}
+.product-ab{
+    flex: 1;
+    margin: 20px;
+}
+.about-image{
+    overflow: hidden;
+}
+.about-des{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about-des h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+.social-container{
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+.social-inner{
+    width: 75%;
+    height: auto;
+}
+.social-slider {
+    width: 100%;
+    height: 150px;
+    margin-top: 20px;
+    display: flex;
+}
+.social-inner h1,h4{
+    padding: 10px 0;
+}
+.social-element{
+    flex: 1;
+    height: 150px;
+    background-image: url('https://img.freepik.com/free-photo/young-pretty-girl-walking-summer-city_1157-13895.jpg?ga=GA1.1.1046852719.1725983257&semt=ais_hybrid');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.social-shadow{
+    background-color: rgba(87, 101, 116,0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.social-element:hover .social-shadow{
+    display: block;
+}
+footer{
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    background-color: #34495e;
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+    flex-direction: column;
+}
+.footer-inner{
+    width: 75%;
+    height: auto;
+    display: flex;
+}
+.footer-slot{
+    flex: 1;
+}
+.footer-slot h4{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+}
+.footer-slot  ul{
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.footer-slot  ul li{
+    margin-bottom: 8px;
+    color: white;
+}
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin-top: 10px;
+}

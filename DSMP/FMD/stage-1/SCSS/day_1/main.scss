@@ -1,0 +1,47 @@
+// $font-size : 50px;
+// $color:red;
+// h1{
+//     font-size: $font-size;
+//     color: $color;
+// }
+
+
+// ul{
+//     list-style: none;
+//     margin: 0;
+//     padding: 0;
+
+//     li{
+//         padding: 10px 12px;
+//         background-color: aliceblue;
+//     }
+// }
+
+// @import 'button-styles';
+
+// @mixin disply(
+//     $direction,
+//     $alignItems,
+//     $justifyContent
+// ){
+//     flex-direction: $direction;
+//     align-items: $alignItems;
+//     justify-content: $justifyContent;
+// }
+
+// div{
+//     display: flex;
+//     width: 500px;
+//     border: 1px solid red;
+//     @include disply(row,center ,center )
+// }
+
+@function calculate-height($height){
+    @return $height + 500px
+}
+div{
+    height: calculate-height(500px);
+    background-color:aquamarine;
+    width: 1500px;
+    border: 1px solid sandybrown;
+}

@@ -1,0 +1,45 @@
+.inner{
+    height: 200px;
+    margin-bottom: 10px;
+}
+.box{
+    height: 100%;
+    display: flex;
+    padding: 10px;
+}
+.left{
+    width: 60px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.header{
+    text-align: center;
+}
+.para{
+    font-size: 11px;
+    text-align: center;
+}
+@media only screen and (max-width:575px) {
+    /* .box{
+        display: block;
+    }
+    .left{
+        width: 100%;
+        border: 1px red solid;
+    } */
+    .box{
+        display: flex;
+    }
+    .left{
+        width: 100%;
+    }
+}

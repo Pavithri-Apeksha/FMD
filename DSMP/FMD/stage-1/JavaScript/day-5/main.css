@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container-body{
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    background-image: url('https://img.freepik.com/free-vector/geometric-science-education-background-vector-gradient-blue-digital-remix_53876-125993.jpg?t=st=1729413234~exp=1729416834~hmac=518c9e59654e23a68443cc5ee394f91fd8466f691f94d6915fd88c17c7a7b018&w=1380');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inner-container{
+    width: 85%;
+    height: auto;
+    min-height: 85%;
+    background-color: rgba(236, 240, 241,0.6);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.container-table{
+    width: 85%;
+    height: auto;
+    margin-top: 10px;
+    background-color: rgba(236, 240, 241,0.6);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controller-wrapper{
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px 25px;
+}
+.controller-items{
+    height: 8vh;
+    flex: 1;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-inner{
+    background-color: rgba(236, 240, 241,1.0);
+    flex: 1;
+    height: 100%;
+    border-radius: 5px;
+    -webkit-box-shadow: 11px 10px 25px 0px rgba(107,102,107,1);
+    -moz-box-shadow: 11px 10px 25px 0px rgba(107,102,107,1);
+    box-shadow: 11px 10px 25px 0px rgba(107,102,107,1);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-inner select{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    padding: 0 40px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    background-color: rgba(236, 240, 241,1.0);
+    border-radius: 5px;
+    border: none;
+}
+.item-inner select:focus {
+    outline: none;
+    border: 1px solid rgba(236, 240, 241,1.0);
+}
+.btn-primary{
+    background-color: rgba(52, 152, 219,1.0);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: white;
+}
+.playground{
+    border: 1 solid red;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    font-size: 35px;
+}
+.questions{
+    width: 280px;
+}
+.form-control{
+    background-color: rgba(236, 240, 241,1.0);
+    width: 80%;
+    margin: 20px 0;
+    height: 45px;
+    outline: none;
+    border: 1px solid rgba(236, 240, 241,1.0);
+    border-radius: 2px;
+    font-size: 28px;
+    padding: 0 20px;
+}
+.form-control:focus{
+    outline: none;
+    border: 1px solid rgba(236, 240, 241,1.0);
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.button-bar{
+    height: 15vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-right: 100px;
+}
+.btn-1{
+    width: 10vw;
+    height: 70px;
+    margin-right: 50px;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.btn-dark-outline{
+    background-color: rgba(236, 240, 241,1.0);
+    border: 2px solid gray;
+}
+.btn-dark-outline:hover{
+    background-color: black;
+    color: rgba(236, 240, 241,1.0);
+}
+.sub:hover{
+    background-color: rgb(21, 72, 105);
+}

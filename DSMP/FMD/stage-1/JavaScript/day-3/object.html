@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // create object
+        const customer = {
+            name :"Apeksha",
+            age:25,
+            salary : 25000.00,
+            isActive : true,
+            address:{
+                contry : "Sri Lanka",
+                city : "Kalutara",
+                postal : 1200
+            }
+        }
+        console.log(customer);
+        console.log(customer.name);
+        console.log(customer.address.city);
+        customer.age = 23;
+        console.log(customer.age);
+        customer.address = {};
+        console.log(customer.address);
+        customer.contact = "071";
+        console.log(customer);
+        delete customer.address;
+        console.log(customer);
+
+        // Create function in object
+        const man = {
+            name :"Apeksha",
+            age:25,
+            salary : 25000.00,
+            isActive : true,
+            sayHi:function(){
+                console.log(man);
+                console.log('Hello');
+            },
+            printSomeData(){
+                console.log('ABCD');
+            }
+        }
+        man.sayHi();
+        man.printSomeData();
+
+        // Array
+        const arr = ['nimal'];
+        console.log(arr);
+        arr.push('Kamal');
+        console.log(arr);
+        console.log(arr[0]);
+        arr.push('Saman');
+        console.log("============");
+        for (let x =0;x<arr.length;x++){
+            console.log(arr[x]);
+        }
+        console.log("============");
+        for(const x of arr){
+            console.log(x);
+        }
+        console.log("////////////////////");
+        const arr1 = ['nimal'];
+        arr1.push('saman');
+        console.log(arr1);
+        arr1.pop();
+        console.log(arr1);
+        arr1.push('bandara');
+        console.log(arr1);
+        arr1.shift();
+        console.log(arr1);
+        arr1.unshift('Gihan');
+        console.log(arr1);
+
+        console.log("***************");
+        const arr2 = [1,2,3,4,5];
+        let arrNew = arr2.map(x=>x*x);
+        console.log(arr2);
+        console.log(arrNew);
+
+        //print 1-100
+        const arr3 = []
+        for(let x = 0;x<=100;x++){
+            arr3.push(x);
+        }
+        let newArray = Array.from({length:101},(_,index)=>index)
+        console.log(newArray);
+        console.log(arr3);
+
+        //filter
+        let oddArr = arr3.filter(n=>n%2==1);
+        console.log(oddArr);
+
+        //reduce
+        let xArr = arr2.reduce((acc,n)=>acc+n);
+        console.log(xArr);
+
+        //slice
+        arr2.splice(3,1);
+        console.log(arr2);
+
+        //error handle
+        let status = true;
+        try{
+            status = false;
+            let obj = undefined;
+            console.log(obj.name);
+            status = true;
+            console.log(status);
+        }catch(error){
+            console.log("message : ",error.message);
+            console.log(status);
+        }finally{
+            status = true;
+            console.log(status);
+        }
+    </script>
+</body>
+</html>
