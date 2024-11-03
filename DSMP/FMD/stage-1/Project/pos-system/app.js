@@ -23,6 +23,7 @@ const analytics = getAnalytics(app);
 document.getElementById('customerContext').style.display='block';
 document.getElementById('productContext').style.display='none';
 document.getElementById('orderContext').style.display='none';
+document.getElementById('loginWrapper').style.display='none';
 
 document.getElementById('customerTab').addEventListener('click',function(event){
     event.preventDefault();
@@ -80,15 +81,32 @@ const login = ()=>{
         alert('Please provide the email and use password');
         return;
     }
-    signInWithEmailAndPassword(auth,email,password)
+    signInWithEmailAndPassword(auth, email, password)
     .then((userCredentials)=>{
-        document.getElementById('success-reg-alert').innerText='Reegistraion Success';
-        document.getElementById('success-reg-alert').style.display='block';
+      let user =userCredentials.user;
+        console.log(userCredentials);
+        document.cookie=`authToken=${user.accessToken}; path=/; max-age=3600`;
+        alert('Welcome..'); 
+        document.getElementById('loginWrapper').style.display='none';
     }).catch((error)=>{
-        document.getElementById('error-reg-alert').innerText=error.message;
-        document.getElementById('error-reg-alert').style.display='block';
+      alert(error.message); 
     })
-}
+  }
+  
+  function getCookie(name){
+    const value = `; ${document.cookie}`;
+    const parts = value.split(`; ${name}=`);
+    if(parts.length===2) return parts.pop().split(';').shift();
+    return null;
+  }
+  
+  const authToken = getCookie('authToken');
+  if(authToken){
+    document.getElementById('loginWrapper').style.display='none';
+  }else{
+    document.getElementById('loginWrapper').style.display='block';
+  }
+  
 window.registerNow = registerNow;
 window.login = login;
 
