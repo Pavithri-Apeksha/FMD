@@ -10,6 +10,7 @@
 <body>
     <br>
     <div class="container">
+        <div id="loginWrapper">
         Login Here....
         <hr>
         <div class="row">
@@ -26,7 +27,7 @@
             <div class="col-12">
                 <br>
                 <button type="button" class="btn btn-primary btn-sm" onclick="login()">Login</button>&nbsp;&nbsp;&nbsp;
-                <button type="button" id="signupButton" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign Up</button>
+                <button type="button" id="signupButton" onclick="registerNow()" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign Up</button>
                 <hr>
             </div>
             <div class="col-12">
@@ -34,6 +35,7 @@
                 <button class="btn btn-dark btn-sm">Register with Github</button>
             </div>
         </div>
+    </div>
         <hr>
         <ul class="nav nav-tabs">
             <li class="nav-item" onclick="">
