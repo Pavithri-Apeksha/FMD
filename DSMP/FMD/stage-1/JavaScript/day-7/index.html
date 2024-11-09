@@ -11,6 +11,25 @@
         const arr2 = [...arr1];
         console.log(arr2);
         
+        const arr3 = [5,6,7,8];
+        const arr4 = [...arr1,...arr3];
+        console.log(arr4);
+        
+        const obj1 = {name:'Kamal',age:25};
+        const obj2 = {city : 'Kalutara',country : 'Sri Lanka'};
+        const obj3 = {...obj1,...obj2};
+        console.log(obj3);
+        
+        function sum(...numbers){
+            let tem = 0;
+            for(const num of numbers){
+                tem += num;
+            }
+            return tem;
+        }
+        console.log(sum(10,20));
+        console.log(sum(20,20,50));
+        
     </script>
 </body>
 </html>
