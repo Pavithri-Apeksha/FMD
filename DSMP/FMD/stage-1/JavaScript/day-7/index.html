@@ -30,6 +30,20 @@
         console.log(sum(10,20));
         console.log(sum(20,20,50));
         
+        const person = {
+            name : 'Kamal',
+            age : 25,
+            salary : 25000,
+            isEnable : true
+        }
+        console.log(person);
+        
+        const jsonString = JSON.stringify(person);
+        console.log(jsonString);
+        
+        const realPerson = JSON.parse(jsonString);
+        console.log(realPerson);
+        
     </script>
 </body>
 </html>
