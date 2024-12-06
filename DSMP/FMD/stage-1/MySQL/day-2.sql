@@ -29,6 +29,16 @@ create table t3(
     name varchar(45) not null,
     nic varchar(45) UNIQUE,
     email varchar(45) UNIQUE
-)
+);
 insert into t3 values (1001,'Jagath',2001,'jagath@gmail.com');
 insert into t3 values (1002,'Saman',2005,'saman@gmail.com');
+
+#Default
+create table t4(
+    id int Primary key,
+    name varchar(45) not null,
+    email varchar(45) UNIQUE not null,
+    contact_number varchar(20) not null Default 'No Number'
+);
+insert into t4 values (01,'Kamal','kamal@gmail.com','071');
+insert into t4 (id,name,email) values (02,'Saman','saman@gmail.com');
