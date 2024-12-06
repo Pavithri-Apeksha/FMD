@@ -1,0 +1,32 @@
+SHOW DATABASES;
+CREATE DATABSE ABCD;
+CREATE DATABSE IF NOT EXISTS ABCD;
+DROP DATABASE ABCD;
+
+USE ABCD;
+SHOW TABLES;
+CREATE TABLE CUSTOMER(
+	name VARCHAR(45),
+	city VARCHAR(45)
+);
+DESCRIBE CUSTOMER;
+DESC CUSTOMER;
+DROP TABLE IF EXIST CUSTOMER;
+
+=========CRUD Operators===========
+>>>> create >>>>
+INSERT INTO customer (name, city) VALUES ('Kamal','Colombo');
+
+>>>> read >>>>
+SELECT * FROM customer;
+SELECT name FROM customer;
+SELECT salary*2 AS `salary after` from customer;
+
+>>>> update >>>>
+ALTER TABLE customer ADD salary bouble;
+UPDATE customer SET salary = 1000;
+UPDATE customer SET name = 'Jagath' WHERE city = 'Colombo';
+
+>>>> delete >>>>
+DELETE FROM CUSTOMER WHERE city = 'Panadura';
+TRUNCATE customer;

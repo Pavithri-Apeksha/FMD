@@ -9,7 +9,8 @@ class Example{
         if(num>100){
             System.out.println("Greater than 100");
         }*/
-       System.out.println("Enter Number 1 : ");
+
+       /*System.out.println("Enter Number 1 : ");
        int num1 = input.nextInt();
        System.out.println("Enter number 2 : ");
        int num2 = input.nextInt();
@@ -18,6 +19,14 @@ class Example{
        }
         if(num1<num2){
             System.out.println(num2 + "is greater than "+num1);
+       }*/
+
+       System.out.println("Enter your marks : ");
+       int marks = input.nextInt();
+       if(marks>50){
+        System.out.println("Pass");
+       }else{
+        System.out.println("Fail");
        }
     }
 }
