@@ -42,3 +42,12 @@ create table t4(
 );
 insert into t4 values (01,'Kamal','kamal@gmail.com','071');
 insert into t4 (id,name,email) values (02,'Saman','saman@gmail.com');
+
+#check
+create table t5(
+    id varchar(45) Primary key,
+    reg_date DATETIME,
+    age int check (age>=18)
+);
+#insert into t5 values ('t001',NOW(),15); - not work
+insert into t5 values ('t001',NOW(),20);
