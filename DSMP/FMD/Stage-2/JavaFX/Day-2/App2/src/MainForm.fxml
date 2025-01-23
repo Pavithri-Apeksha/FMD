@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainFormController">
+   <children>
+      <Separator layoutX="13.0" layoutY="202.0" prefHeight="3.0" prefWidth="579.0" />
+      <Separator layoutX="300.0" layoutY="14.0" orientation="VERTICAL" prefHeight="382.0" prefWidth="0.0" />
+      <TextField fx:id="txtKeyPressed" layoutX="34.0" layoutY="83.0" onKeyPressed="#onKeyPressedActionEvent" prefHeight="48.0" prefWidth="242.0" promptText="Type here...." />
+      <TextField fx:id="txtKeyPressedAnswer" layoutX="330.0" layoutY="83.0" prefHeight="48.0" prefWidth="242.0" promptText="Answer" />
+      <TextField fx:id="txtKeyReleased" layoutX="41.0" layoutY="251.0" onKeyReleased="#onKeyReleasedActionEvent" prefHeight="48.0" prefWidth="242.0" promptText="Type here...." />
+      <TextField fx:id="txtKeyReleasedAnswer1" layoutX="330.0" layoutY="251.0" prefHeight="48.0" prefWidth="242.0" promptText="Answer" />
+   </children>
+</AnchorPane>

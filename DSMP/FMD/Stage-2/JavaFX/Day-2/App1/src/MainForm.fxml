@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainFormController">
+   <children>
+      <TextField fx:id="txtMyName" layoutX="65.0" layoutY="38.0" prefHeight="40.0" prefWidth="249.0" promptText="Enter Your Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button layoutX="372.0" layoutY="27.0" mnemonicParsing="false" onAction="#btnPrintOnAction" prefHeight="53.0" prefWidth="159.0" text="Print Data">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Separator layoutY="116.0" prefHeight="1.0" prefWidth="600.0" />
+      <TextField fx:id="txtEmail" layoutX="65.0" layoutY="139.0" onAction="#txtPrintEmailOnAction" prefHeight="40.0" prefWidth="249.0" promptText="Enter Your Email">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
