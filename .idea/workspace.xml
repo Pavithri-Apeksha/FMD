@@ -5,18 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2169955a-d8dd-4a1a-9763-d2dc0249d1b4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/FMD/FileContentIndex/c87a810e-bcae-44b3-9a6f-a565fc4afa7b.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/FMD/v17/.wsuo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/FMD/v17/DocumentLayout.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/VSWorkspaceState.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/slnx.sqlite" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSMP/FMD/Stage-2/JavaFX/Day-2/App4/src/MainForm.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/DSMP/FMD/Stage-2/JavaFX/Day-2/App4/src/MainForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSMP/FMD/Stage-2/JavaFX/Day-2/App4/src/MainFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSMP/FMD/Stage-2/JavaFX/Day-2/App4/src/MainFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSMP/FMD/Stage-2/JavaFX/Day-2/App1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSMP/FMD/Stage-2/JavaFX/Day-2/App1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DSMP/FMD/Stage-2/JavaFX/Day-2/App1/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +43,31 @@
       <recent name="E:\projects\FMD\DSMP\FMD\Stage-2\JavaFX\Day-2" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="FMD" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -73,7 +89,8 @@
       <workItem from="1737602655249" duration="1101000" />
       <workItem from="1737604577439" duration="2516000" />
       <workItem from="1737607979370" duration="6598000" />
-      <workItem from="1737733904032" duration="2113000" />
+      <workItem from="1737733904032" duration="5837000" />
+      <workItem from="1737959075962" duration="1205000" />
     </task>
     <servers />
   </component>

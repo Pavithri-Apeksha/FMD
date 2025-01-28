@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WindowAController">
+   <children>
+      <Label layoutX="130.0" layoutY="110.0" prefHeight="57.0" prefWidth="179.0" text="WindowA">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="220.0" layoutY="243.0" mnemonicParsing="false" onAction="#newWindowOnAction" prefHeight="58.0" prefWidth="258.0" text="Next Window">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

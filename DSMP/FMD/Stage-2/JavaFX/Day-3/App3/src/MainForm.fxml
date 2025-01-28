@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="748.0" prefWidth="895.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainFormController">
+   <children>
+      <Label layoutX="32.0" layoutY="29.0" prefHeight="30.0" prefWidth="228.0" text="Customer Table" textFill="#0a4ef0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Separator layoutX="8.0" layoutY="72.0" prefHeight="0.0" prefWidth="834.0" />
+      <TableView fx:id="tblCustomer" layoutX="22.0" layoutY="101.0" prefHeight="483.0" prefWidth="701.0">
+        <columns>
+          <TableColumn fx:id="colNIC" prefWidth="140" text="NIC" />
+          <TableColumn fx:id="colName" prefWidth="140" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="140" text="Address" />
+            <TableColumn fx:id="colSalary" prefWidth="140" text="Salary" />
+            <TableColumn fx:id="colDelete" prefWidth="140" text="Delete" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
