@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2169955a-d8dd-4a1a-9763-d2dc0249d1b4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DSMP/FMD/Stage-2/JavaFX/Day-3/App6/src/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/DSMP/FMD/Stage-2/JavaFX/Day-3/App6/src/Dashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +88,7 @@
       <workItem from="1737604577439" duration="2516000" />
       <workItem from="1737607979370" duration="6598000" />
       <workItem from="1737733904032" duration="5837000" />
-      <workItem from="1737959075962" duration="4032000" />
+      <workItem from="1737959075962" duration="4122000" />
     </task>
     <servers />
   </component>

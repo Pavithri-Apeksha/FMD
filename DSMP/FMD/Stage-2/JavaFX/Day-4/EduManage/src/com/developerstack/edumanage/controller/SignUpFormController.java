@@ -2,6 +2,7 @@ package com.developerstack.edumanage.controller;
 
 import com.developerstack.edumanage.db.Database;
 import com.developerstack.edumanage.model.User;
+import com.developerstack.edumanage.util.security.PasswordManager;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -23,11 +24,11 @@ public class SignUpFormController {
 
     public void signUpOnAction(ActionEvent actionEvent) throws IOException {
         String email = txtEmail.getText().toLowerCase();
-        String password = txtPassword.getText().trim();
+        String password = new PasswordManager().encrypt(txtPassword.getText().trim());
         String firstName = txtFirstName.getText();
         String lastName = txtLastName.getText();
         Database.userTable.add(
-                new User(email, password, firstName, lastName)
+                new User(firstName,lastName,email,password)
         );
         new Alert(Alert.AlertType.CONFIRMATION, "Sign Up Successful").show();
         setUI("LoginForm");
