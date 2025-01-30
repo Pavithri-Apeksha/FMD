@@ -19,17 +19,17 @@
             <Font name="System Bold" size="20.0" />
          </font>
       </Button>
-      <Button layoutX="163.0" layoutY="79.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #130f40;" text="Programs" textFill="WHITE">
+      <Button layoutX="163.0" layoutY="79.0" mnemonicParsing="false" onAction="#openProgramFormOnAction" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #130f40;" text="Programs" textFill="WHITE">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Button>
-      <Button layoutX="321.0" layoutY="79.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #eb4d4b;" text="Intakes" textFill="WHITE">
+      <Button layoutX="321.0" layoutY="79.0" mnemonicParsing="false" onAction="#openIntakeFormOnAction" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #eb4d4b;" text="Intakes" textFill="WHITE">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>
       </Button>
-      <Button layoutX="466.0" layoutY="79.0" mnemonicParsing="false" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #f9ca24;" text="Teachers" textFill="WHITE">
+      <Button layoutX="466.0" layoutY="79.0" mnemonicParsing="false" onAction="#openTeacherFormOnAction" prefHeight="120.0" prefWidth="120.0" style="-fx-background-color: #f9ca24;" text="Teachers" textFill="WHITE">
          <font>
             <Font name="System Bold" size="20.0" />
          </font>

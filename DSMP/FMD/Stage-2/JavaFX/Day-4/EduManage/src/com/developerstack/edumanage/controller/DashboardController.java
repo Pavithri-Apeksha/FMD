@@ -52,4 +52,16 @@ public class DashboardController {
     public void openStudentFormOnAction(ActionEvent actionEvent) throws IOException {
         setUI("StudentForm");
     }
+
+    public void openProgramFormOnAction(ActionEvent actionEvent) throws IOException {
+        setUI("ProgramForm");
+    }
+
+    public void openIntakeFormOnAction(ActionEvent actionEvent) throws IOException {
+        setUI("IntakeForm");
+    }
+
+    public void openTeacherFormOnAction(ActionEvent actionEvent) throws IOException {
+        setUI("TeacherForm");
+    }
 }
