@@ -6,6 +6,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
@@ -22,7 +23,6 @@ public class DashboardController {
     public Label lblDate;
     public Label lblTime;
     public AnchorPane context;
-
     public void initialize() {
         setDate();
     }
@@ -47,5 +47,9 @@ public class DashboardController {
         Stage stage =(Stage)context.getScene().getWindow();
         Parent parent = FXMLLoader.load(getClass().getResource("../view/"+location +".fxml"));
         stage.setScene(new Scene(parent));
+    }
+
+    public void openStudentFormOnAction(ActionEvent actionEvent) throws IOException {
+        setUI("StudentForm");
     }
 }
