@@ -24,7 +24,8 @@ public class LoginFormController {
         setUI("SignUpForm");
     }
 
-    public void forgotPasswordOnAction(ActionEvent actionEvent) {
+    public void forgotPasswordOnAction(ActionEvent actionEvent) throws IOException {
+        setUI("ForgotPasswordForm");
 
     }
 
