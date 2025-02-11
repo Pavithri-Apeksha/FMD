@@ -1,0 +1,25 @@
+<h1>My name is {{name}}</h1>
+<img [src]="imageLink" alt="" width="{{width}}">
+<hr>
+<button [attr.role]="task">Click me</button>
+<hr>
+<button [class.active]="isActive" [style.font-size]="fontSize" (click)="changeFontSize()">Save</button>
+<hr>
+<div [class.divStyle]="isDivStyle" [style.font-size]="fontSize">Hello</div>
+<hr>
+<input type="text" #inputRef (keyup.enter)="printData(inputRef.value)">
+<h4>Customer name : {{customerName}}</h4>
+<hr>
+<button (click)="state=!state">{{state?'Hide Now':'Show Now'}}</button>
+<br>
+<br>
+<div [class.div-2]="isDivStyle" *ngIf="state"></div>
+<hr>
+<ul>
+  <li *ngFor="let tempCustomer of customers; index as myIndex">
+   ({{(myIndex+1)}}) name : {{tempCustomer?.name}} => age : {{tempCustomer?.age}}
+  </li>
+</ul>
+<hr>
+<input type="text" [(ngModel)]="studentName">
+{{studentName}}
