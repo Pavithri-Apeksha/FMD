@@ -1,0 +1,12 @@
+ul{
+  list-style: none;
+  li{
+    display: inline-block;
+    a{
+      padding: 8px 15px;
+      border: 1px solid red;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}
